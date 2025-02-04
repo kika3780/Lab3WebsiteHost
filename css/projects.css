@@ -1,0 +1,125 @@
+/* General styles for the projects page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.icon {
+    margin-left: auto;
+}
+
+.icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Carousel styles for the projects */
+.carousel-container {
+    position: relative;
+    width: 60%;  /* Adjust this value to make the carousel smaller */
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    font-size: 20px;  /* Adjust font size for smaller carousel */
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;  /* Adjust font size for smaller carousel */
+}
+
+/* Carousel Controls (left and right arrows) */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;  /* Reduced padding */
+    font-size: 20px;  /* Reduced font size for arrows */
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.social-media a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media i {
+    font-size: 24px;
+    margin-right: 8px;
+}
